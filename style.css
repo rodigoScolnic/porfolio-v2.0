@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+header {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 50px;
+    background-color: rgba(114, 215, 96, 0.8);
+    position: fixed;
+    width: 100%;
+}
+
+.logo img {
+    width: 50px;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 50px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+    font-family: 'Mooli', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 0 10px;
+    border-bottom: 4px solid transparent;
+    transition: all .2s;
+}
+
+header nav ul li a:hover {
+    border-bottom: 4px solid rgb(246, 86, 86);
+}
+
+.hero {
+    box-shadow: 0 0 20px;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 40vw;
+    background: rgb(246, 86, 86);
+    z-index: 0;
+    transform: skewY(5deg);
+    transform-origin: top right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.obj1 {
+    transform: skewY(-5deg);
+    position: absolute;
+    top: 600px;
+    right: 10px;
+}
+
+.obj1 img{
+    width: 50%;
+}
+
+.obj2 {
+    transform: skewY(-5deg);
+    position: absolute;
+    top: 50px;
+    left: 10px;
+}
+
+.obj2 img {
+    width: 50%;
+}
+
+.hero section {
+    margin-top: 50px;
+    transform: skewY(-5deg);
+    color: white;
+    font-size: 50px;
+    font-family: 'Mooli', sans-serif;
+}
+
+section span {
+    color: rgba(114, 215, 96, 0.9);
+}
+
+.effect {
+    transition: opacity 0.5s ease-in-out;
+}
+
+.about {
+    position: relative;
+    top: -100px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 40vw;
+    z-index: 0;
+    transform: skewY(-5deg);
+    transform-origin: top right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: -20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.about .about-content{
+    transform: skewY(5deg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+    font-family: sans-serif;
+}
+
+.about .about-content .about-title h4 {
+    color: rgb(246, 86, 86);
+}
+
+.about .about-content .about-title h3 {
+    font-family: 'Croissant One', cursive;
+    font-size: 50px;
+}
+
+.about img {
+    margin-top: 100px;
+    border-radius: 50%;
+}
+
+.about-text {
+    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif
+    
+}
+
+.about-text span {
+    color: rgb(114, 215, 96);
+}
+
+.about-text h4 {
+    font-size: 40px;
+}
+
+.about-text h5 {
+    font-size: 20px;
+}
+
+.skills {
+    box-shadow: 0 0 20px;
+    background-color: rgb(61, 70, 236);
+    height: 100vw;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 50vw;
+    z-index: 0;
+    transform: skewY(-5deg);
+    transform-origin: top right;
+    display: flex;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.skills-content {
+    height: 50%;
+    transform: skewY(5deg);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    width: 60%;
+    font-family: sans-serif;
+}
+
+.skills .skills-content .skills-title h4 {
+    color: rgb(246, 86, 86);
+}
+
+.skills .skills-content .skills-title h3 {
+    font-family: 'Croissant One', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+.skills-container {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+.skills-item {
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skills-item i {
+    font-size: 100px;
+}
+
+.skills-item h4 {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
